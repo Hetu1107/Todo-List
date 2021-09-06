@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    color: #2e6fe8;
+}
+body{
+    background-color: #040720;
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70vw;
+    max-width: 70vw;
+    min-height: 70vh;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 5vh 5vw;
+}
+.input{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.input input{
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 30px;
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    background: transparent;
+    border: 2px solid #2e6fe883;
+    color: white;
+    border-radius: 4px;
+    transition: all 200ms ease;
+}
+.input input:hover{
+    border: 2px solid white;
+}
+.input input:focus{
+    border: 2px solid #2e6fe8;
+}
+.input button{
+    width: 100px;
+    border: none;
+    outline: none;
+    height: 40px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #2e6fe8;
+    color: #040720;
+    transition: all 300ms ease;
+}
+.input button:hover{
+    background: #2e6fe87e;
+    color: white;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list .list_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 8px 0;
+    background: #1e4a9c;
+    border-radius: 4px;
+}
+.list .list_box h3{
+    color: #040720;
+    margin-left: 20px;
+    width: 80%;
+    height: 100%;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.list .list_box i{
+    display: flex;
+    width: 20%;
+    margin-right: 20px;
+    justify-content: end;
+    color: #040720;
+    /* width: 20%; */
+    height: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.list .list_box i:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .input{
+        flex-direction: column;
+    }
+    .input button{
+        margin-left: 0px;
+        margin-top: 10px;
+    }    
+}
